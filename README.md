@@ -3,29 +3,20 @@
 
 
 ## Mục tiêu bài lab
-Sau khi hoàn thành bài này, sinh viên có thể:
-- Đọc hiểu và chạy được chương trình tính entropy của một chuỗi ký tự.
-- Bổ sung chức năng tính độ dư thừa thông tin dựa trên entropy thực tế.
-- Cài đặt hàm tìm nghịch đảo modulo bằng thuật toán Euclid mở rộng.
-- Tổ chức, kiểm thử và nộp bài bằng GitHub repo.
+Repo này chứa mã nguồn và báo cáo cho bài thực hành số 1, bao gồm:
+- Tính toán Entropy và độ dư thừa thông tin (Redundancy).
+- Cài đặt thuật toán Euclid mở rộng để tìm nghịch đảo modulo.
 
 ## Cấu trúc repo
-- `src/entropy_redundancy.cpp`: Q1, Q2
-- `src/mod_inverse.cpp`: Q3
-- `tests/test_cases.md`: test cases tối thiểu
-- `logs/run_log.md`: log chạy chương trình
-- `report-page.md`: báo cáo 1 trang
+- `src/`: Chứa mã nguồn C++.
+- `tests/`: Chứa các test cases kiểm thử chương trình.
+- `logs/`: Chứa kết quả chạy thử (run log).
+- `report-page.md`: Báo cáo tổng kết bài lab.
 
-## Yêu cầu nộp bài
-Hoàn thiện repo và nộp link GitHub. Repo cần có:
-- `README.md`
-- `report-1page.md`
-- `tests/` với ít nhất 5 test cases
-- `logs/` có kết quả chạy thử
-- mã nguồn hoàn thiện cho Q1, Q2, Q3
-
-## Gợi ý commit
-- `Complete Q1 entropy walkthrough`
-- `Implement redundancy calculation`
-- `Implement modular inverse with extended Euclid`
-- `Add tests and report`
+## Hướng dẫn chạy chương trình (Trên Windows)
+1. **Entropy và Redundancy:**
+   - Biên dịch: `g++ src/entropy_redundancy.cpp -o entropy_redundancy`
+   - Thực thi: `.\entropy_redundancy.exe`
+2. **Modulo Inverse:**
+   - Biên dịch: `g++ src/mod_inverse.cpp -o mod_inverse`
+   - Thực thi: `.\mod_inverse.exe`

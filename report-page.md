@@ -13,9 +13,9 @@ Tóm tắt ngắn gọn mục tiêu của bài lab.
 ### 3.1 Entropy và redundancy
 | Input | Entropy | Redundancy | Nhận xét |
 |---|---:|---:|---|
-| aaaa |  |  |  |
-| abcd |  |  |  |
-| hello world |  |  |  |
+| aaaa | 0 | 8 | Dữ liệu lặp hoàn toàn, cực kỳ dễ đoán, độ dư thừa tối đa. |
+| abcd | 2 | 6 | Các ký tự phân bố đều, khó đoán hơn chuỗi lặp. |
+| hello world | 2.84535 | 5.155 | Chuỗi thực tế có sự lặp lại của một số ký tự (l, o), entropy mức trung bình. |
 
 ### 3.2 Modulo inverse
 | a | m | Kết quả mong đợi | Kết quả chương trình |
@@ -25,4 +25,6 @@ Tóm tắt ngắn gọn mục tiêu của bài lab.
 | 6 | 9 | Không tồn tại |  |
 
 ## 4. Kết luận
-Nêu ngắn gọn em học được gì từ bài lab, khó khăn lớn nhất là gì, và điều gì giúp em hiểu rõ hơn về entropy hoặc modulo inverse.
+- **Kiến thức học được:** Hiểu rõ hơn về ý nghĩa thực tế của Entropy (dữ liệu càng lặp thì entropy càng thấp, redundancy càng cao) và cách hoạt động của thuật toán Euclid mở rộng khi áp dụng vào code.
+- **Khó khăn:** Quá trình cài đặt môi trường trình biên dịch C++ (g++) trên Windows (MSYS2) gặp lỗi biến môi trường và quyền truy cập.
+- **Cách khắc phục:** Đã xử lý thành công bằng cách chạy cấp quyền Administrator và set lại biến môi trường Path.
