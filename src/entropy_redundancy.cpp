@@ -24,9 +24,8 @@ double calculate_entropy(const string &text) {
 }
 
 double calculate_redundancy(const string &text, int alphabet_size = 256) {
-    double max_entropy = log2(alphabet_size);      // log2(256) = 8.0
-    double actual_entropy = calculate_entropy(text);
-    return max_entropy - actual_entropy;
+    double entropy = calculate_entropy(text);
+    return log2(alphabet_size) - entropy;
 }
 
 int main() {
